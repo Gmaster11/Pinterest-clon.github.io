@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    width: auto;
+   
+    box-shadow: 0 4px 6px rgba(210, 46, 46, 0.1);
+}
+
+body{
+    
+    font-family: 'Raleway', sans-serif;
+   /* font-family: 'Sometype Mono', monospace;*/
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/** HEADER**/
+header {
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    height: 80px;
+    padding: 4px 16px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.buscador {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buscador .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+.buscador .logo #pinterest-logo {
+    width: 27px;
+    height: 27px;
+}
+
+.buscador .inicio {
+    display: flex;
+    padding: 0px 16px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 71.44px;
+    height: 48px;
+    font-size:medium;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.buscador #explorar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+   /* background-color: brown;*/
+    text-align:center;
+    width: 91.88px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.buscador #crear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    /*background-color: blueviolet;*/
+    text-align:center;
+    width: 70.5px;
+    height: 48px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.buscador .buscar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(226, 226, 226, 0.799);
+    border-radius: 50px;
+    width: 856.19px;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 8px;
+    color:rgba(0, 0, 0, 0.568);
+    margin-right: 8px;
+}
+
+.buscador .buscar:hover{
+    background-color: rgba(194, 194, 194, 0.799);
+}
+
+.buscador .buscar #lupa{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    
+}
+.buscador .buscar #buscar1{
+    display: flex;
+    width: 486.19px;
+    height: 48px;
+    align-items: center;
+}
+
+.buscador .buscar #name{
+    width: 300px;
+    height: 45px;
+    background-color: rgba(226, 226, 226, 0);
+    border: none;
+    outline: none;
+
+}
+.buscador .buscar #name:hover{
+    background-color: rgba(194, 194, 194, 0);
+    border: none;
+    outline: none;
+}   
+
+.boton{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.boton:hover{
+    background-color: rgba(226, 226, 226, 0.799);
+}
+
+.boton #campana{
+    border: none;
+    width: 24px;
+    height: 20px;
+}
+
+.boton #globo{
+    border: none;
+    width: 24px;
+    height: 23px;   
+}
+
+.boton #perfil{
+    border: none;
+    width: 24px;
+    height: 20px;
+}
+.boton #flecha{
+    border: none;
+    width: 24px;
+    height: 20px;   
+}
+
+/*INICIA LA PARTE DE MAIN*/
+
+
+.principal{
+    margin-top: 80px;
+    display: flex; 
+    max-width: auto;
+    flex-direction: column;
+}
+/* Ideas*/
+
+.principal .ideas{
+    display: flex;
+    justify-content: center;
+    height: 142px;     
+}
+
+.ideas #cuadro{
+    display: flex;
+    background-color: rgb(217, 228, 228);
+    margin: 20px;
+    border-radius: 20px;
+    width: 299px;
+    height: 110px;
+} 
+.ideas #cuadro #img{
+    display: flex;;
+    border-radius: 20%;
+    padding: 5px;
+}
+.ideas #cuadro #texto{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction:column
+}
+
+.ideas #cuadro #texto1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:small; 
+
+    
+}
+
+.ideas #cuadro #texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: larger;
+}
+
+
+/*Principal*/
+.imagenes{
+    
+    display:flex;
+    width: 1300px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 40px; 
+    
+}
+
+
+.imagenes #imagen{
+    display: flex;
+    /*background-color: rgb(41, 206, 104); */
+    margin: 5px;
+    width: 250px;
+    height: 400px;
+    border-radius: 20%;
+} 
+
+/* De 320px a 375px el hijo que contiene el numero 2 debe ser de un color distinto y un tamaño distinto a los otros */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 375px){
+    .imagenes{
+        
+        width: 75%;
+        height:70%;
+    }
+    .ideas{
+          width: 70%;
+        height:70%;
+    }
+
+    }
+}
